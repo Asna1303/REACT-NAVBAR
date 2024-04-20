@@ -15,5 +15,12 @@ const NavbarWrapper = styled.nav`
     padding: 1rem;
   }
 `;
+const NavLinkWrapper = styled.div`
+  @media (max-width: 704px) {
+    display: ${(props) => (props.active ? "block" : "none")};
+    text-align: center;
+    padding: 2rem 0;
+  }
+`;
 
 export { LogoImg};
