@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 const LogoImg = styled.img`
   align-self: start;
   width: 150px;
@@ -53,4 +54,7 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
-export { LogoImg};
+export { LogoImg,
+  NavbarWrapper,
+  NavLinkWrapper,
+  StyledNavLink};
