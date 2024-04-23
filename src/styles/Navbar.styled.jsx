@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const LogoImg = styled.img`
   align-self: start;
   width: 150px;
@@ -53,8 +54,24 @@ const StyledNavLink = styled(NavLink)`
     margin: 2rem auto;
   }
 `;
+const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 21px;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  @media (max-width: 704px){
+    display: block;
+  }
+  };
+`;
 
-export { LogoImg,
+export {
+  LogoImg,
   NavbarWrapper,
   NavLinkWrapper,
-  StyledNavLink};
+  StyledNavLink,
+  StyledFontAwesomeIcon,
+};

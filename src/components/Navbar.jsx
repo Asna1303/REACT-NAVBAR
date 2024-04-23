@@ -1,5 +1,6 @@
 import React , {useState} from 'react'
 import { Logo } from './Logo'
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavLinkWrapper, NavbarWrapper ,StyledNavLink, StyledFontAwesomeIcon,} from '../styles/Navbar.styled'
 
 export const Navbar = () => {
