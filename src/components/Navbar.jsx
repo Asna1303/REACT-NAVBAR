@@ -3,6 +3,7 @@ import { Logo } from './Logo'
 import { NavLinkWrapper, NavbarWrapper } from '../styles/Navbar.styled'
 
 export const Navbar = () => {
+  const [active, setActive] = useState(false);
   const link = [
     {
       page: "Home",
