@@ -1,6 +1,6 @@
 import React , {useState} from 'react'
 import { Logo } from './Logo'
-import { NavLinkWrapper, NavbarWrapper } from '../styles/Navbar.styled'
+import { NavLinkWrapper, NavbarWrapper ,StyledNavLink} from '../styles/Navbar.styled'
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
