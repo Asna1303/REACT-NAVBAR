@@ -19,8 +19,16 @@ export const Navbar = () => {
   return (
     <NavbarWrapper>
       <Logo/>
-      <NavLinkWrapper>
-
+      <NavLinkWrapper active={active}>
+        {link.map((link) => (
+          <StyledNavLink
+            activeclassname="active"
+            key={link.page}
+            to={link.href}
+          >
+            {link.page}
+          </StyledNavLink>
+        ))}
       </NavLinkWrapper>
     </NavbarWrapper>
   )
